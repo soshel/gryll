@@ -6,7 +6,6 @@ https://justanotherdevblog.com/writing-your-first-app-on-angular-2-part-1-b794ff
 https://justanotherdevblog.com/writing-your-first-app-on-angular-2-part-2-8553f0ce6671
 https://justanotherdevblog.com/writing-your-first-app-on-angular-2-part-3-5ba355afba6e
 
-
 ### Prerequisites
 
 Before running this app you must have installed:
