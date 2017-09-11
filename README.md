@@ -1,10 +1,10 @@
 # Gryll
 Based off of the Angular 2 app chat tutorial by Daniel Pereira: angular2-tutorial
 
-https://github.com/danielpereira90/angular2-tutorial
-https://justanotherdevblog.com/writing-your-first-app-on-angular-2-part-1-b794ffdfc802
-https://justanotherdevblog.com/writing-your-first-app-on-angular-2-part-2-8553f0ce6671
-https://justanotherdevblog.com/writing-your-first-app-on-angular-2-part-3-5ba355afba6e
+https://github.com/danielpereira90/angular2-tutorial<br>
+https://justanotherdevblog.com/writing-your-first-app-on-angular-2-part-1-b794ffdfc802<br>
+https://justanotherdevblog.com/writing-your-first-app-on-angular-2-part-2-8553f0ce6671<br>
+https://justanotherdevblog.com/writing-your-first-app-on-angular-2-part-3-5ba355afba6e<br>
 
 ### Prerequisites
 
