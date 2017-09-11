@@ -3,15 +3,15 @@ import {Message} from './message';
 import {MessageService} from './message.service';
 
 @Component({
-    selector: 'chat-display',
+    selector: 'gryll-display',
     styles : [`
-        .chat-display {
+        .gryll-display {
             height : 400px;
             overflow : auto;
         }
     `],
     template : `
-         <div class="chat-display thumbnail">
+         <div class="gryll-display thumbnail">
 			<div *ngFor="#message of messages">
 				<b>{{message.username}}</b>: {{message.content}}
 			</div>
@@ -20,7 +20,7 @@ import {MessageService} from './message.service';
 	 providers : [MessageService]
 })
 
-export class ChatDisplayComponent implements OnInit {
+export class GryllDisplayComponent implements OnInit {
 
     private messages : Message[];
  

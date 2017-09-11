@@ -1,19 +1,19 @@
 import {Component} from 'angular2/core';
-import {ChatDisplayComponent} from './chat-display.component';
-import {ChatInputComponent} from './chat-input.component'
+import {ChatDisplayComponent} from './gryll-display.component';
+import {ChatInputComponent} from './gryll-input.component'
 
 @Component({
-    selector: 'chat-app',
+    selector: 'gryll-app',
     template : `
         <div class="container">
-            <h3 class="text-center">Chat App — Made in Angular 2</h3>
+            <h3 class="text-center">Adventure</h3>
             <div [hidden]="!hasUsername">
 				<div class="row">
-					<chat-display></chat-display>
+					<gryll-display></gryll-display>
 				</div>
 			 
 				<div class="row">
-					<chat-input [username]="username"></chat-input>
+					<gryll-input [username]="username"></gryll-input>
 				</div>
 			</div>
 			<div [hidden]="hasUsername">
@@ -26,10 +26,10 @@ import {ChatInputComponent} from './chat-input.component'
 			</div>
         </div>
     `,
-    directives : [ChatDisplayComponent, ChatInputComponent]
+    directives : [GryllDisplayComponent, GryllInputComponent]
 })
 
-export class ChatAppComponent { 
+export class GryllAppComponent { 
 	private username : string;
 	private hasUsername = false;
 	

@@ -1,5 +1,7 @@
 "use strict";
 
+var listeningPort = 8080;
+
 var express = require('express');
 var bodyParser = require('body-parser');
 var server = express();
@@ -23,6 +25,7 @@ server.get('/', function(req, res) {
     res.sendFile(__dirname + '/index.html');
 });
 
-server.listen(3000, '0.0.0.0', function() {
-    console.log('Chat app listening on port 3000!');
+server.listen(listeningPort, '0.0.0.0', function() {
+    console.log('Chat app listening on port ' + listeningPort + '!');
+	console.log('Press Ctrl+C to quit.');
 });

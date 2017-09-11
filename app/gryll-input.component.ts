@@ -2,7 +2,7 @@ import {Component} from 'angular2/core';
 import {MessageService} from './message.service';
 
 @Component({
-    selector: 'chat-input',
+    selector: 'gryll-input',
      template : `
          <div class="input-group">
              <span class="input-group-addon" id="sizing-addon1">{{username}}</span>
@@ -16,7 +16,7 @@ import {MessageService} from './message.service';
 	providers : [MessageService]
 })
 
-export class ChatInputComponent {
+export class GryllInputComponent {
     private username = 'Default username';
 	private content : string;
 	
