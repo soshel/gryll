@@ -1,0 +1,60 @@
+# [START app_yaml]
+
+runtime: nodejs
+env: flex
+skip_files:
+- ^(.*/)?\.bak$
+
+# [START env]
+env_variables:
+  # This token is used to verify that requests originate from your application.
+  HASH_TOKEN: c391e0db-8921-494b-a33a-6aab6eb090ae
+
+# [END env]
+
+resources:
+  cpu: 1
+  memory_gb: 3.75
+  disk_size_gb: 10
+  volumes:
+  - name: ramdisk1
+    volume_type: tmpfs
+    size_gb: 0.5
+
+#resources:
+#  cpu: .5
+#  memory_gb: 0.18
+#  disk_size_gb: 10
+
+manual_scaling:
+  instances: 1
+    
+# [START autoscaling]
+#automatic_scaling:
+#  min_num_instances: 1
+#  max_num_instances: 5
+#  cool_down_period_sec: 120 # default value
+#  cpu_utilization:
+#    target_utilization: 0.5 # default value
+# [END autoscaling]
+
+health_check:
+  enable_health_check: True
+  check_interval_sec: 60
+  timeout_sec: 4
+  unhealthy_threshold: 2
+  healthy_threshold: 2
+
+beta_settings:
+  cloud_sql_instances: mw-iot:us-central1:mw-iot-sql-57
+
+handlers:
+- url: /.*
+  script: server.js
+  secure: always
+
+# login: required
+
+# script: this field is no longer required, and ignored
+
+# [END app_yaml]
